@@ -5,7 +5,7 @@
       "Type":"Task",
       "Resource":"arn:aws:states:::lambda:invoke",
       "Parameters":{
-          "FunctionName":"arn:aws:lambda:us-east-1:605189564693:function:lab-transcribe-wrapper:$LATEST",
+          "FunctionName":"arn:aws:lambda:us-east-1:123456789012:function:lab-transcribe-wrapper:$LATEST",
           "Payload":{
             "Input.$":"$"
           }
@@ -21,7 +21,7 @@
       "Type":"Task",
       "Resource":"arn:aws:states:::lambda:invoke",
       "Parameters":{
-          "FunctionName":"arn:aws:lambda:us-east-1:605189564693:function:lab-transcribe-status-checker:$LATEST",
+          "FunctionName":"arn:aws:lambda:us-east-1:123456789012:function:lab-transcribe-status-checker:$LATEST",
           "Payload":{
             "Input.$":"$"
           }
@@ -54,7 +54,7 @@
                 "Type": "Task",
                 "Resource": "arn:aws:states:::lambda:invoke",
                 "Parameters": {
-                  "FunctionName": "arn:aws:lambda:us-east-1:605189564693:function:lab-comprehend-wrapper:$LATEST",
+                  "FunctionName": "arn:aws:lambda:us-east-1:123456789012:function:lab-comprehend-wrapper:$LATEST",
                   "Payload": {
                     "Input.$": "$"
                   }
@@ -70,7 +70,7 @@
                 "Type": "Task",
                 "Resource": "arn:aws:states:::lambda:invoke",
                 "Parameters": {
-                  "FunctionName": "arn:aws:lambda:us-east-1:605189564693:function:lab-translate-wrapper:$LATEST",
+                  "FunctionName": "arn:aws:lambda:us-east-1:123456789012:function:lab-translate-wrapper:$LATEST",
                   "Payload": {
                     "Input.$": "$"
                   }
@@ -86,7 +86,7 @@
       "Type": "Task",
       "Resource": "arn:aws:states:::lambda:invoke",
       "Parameters": {
-        "FunctionName": "arn:aws:lambda:us-east-1:605189564693:function:lab-polly-wrapper:$LATEST",
+        "FunctionName": "arn:aws:lambda:us-east-1:123456789012:function:lab-polly-wrapper:$LATEST",
         "Payload": {
           "Input.$": "$"
         }
